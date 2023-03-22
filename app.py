@@ -18,3 +18,4 @@ def qr_generator(text):
     img.save("qrimg.png")
 
 # run function
+qr_generator("www.harunaalvin.com")
