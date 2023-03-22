@@ -9,6 +9,12 @@ def qr_generator(text):
         box_size = 10,
         border = 4
     )
-# save qr-code as image
+
+    qr.add_data(text)
+    qr.make(fit = True)
+    img = qr.make_image(fill_clor="black", back_color="white")
+
+    # save qr-code as image
+    img.save("qrimg.png")
 
 # run function
