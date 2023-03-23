@@ -1,6 +1,9 @@
 # install librarires needed
 import qrcode
 
+# get link or text from user
+link = input("Enter link or text here: ")
+
 # create function that receives text and converts it to qr-code
 def qr_generator(text):
     qr = qrcode.QRCode(
@@ -18,4 +21,4 @@ def qr_generator(text):
     img.save("qrimg.png")
 
 # run function
-qr_generator("www.harunaalvin.com")
+qr_generator(link)
