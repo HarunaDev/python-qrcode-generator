@@ -18,7 +18,8 @@ def qr_generator(text):
     img = qr.make_image(fill_clor="black", back_color="white")
 
     # save qr-code as image
-    img.save("qrimg.png")
+    img_name = input("Enter name of image: ")
+    img.save(str(f"{img_name}.png"))
 
 # run function
 qr_generator(link)
